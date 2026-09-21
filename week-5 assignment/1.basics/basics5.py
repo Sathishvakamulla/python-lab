@@ -1,0 +1,27 @@
+s = input("Enter a string: ")
+
+vowels = consonants = digits = spaces = 0
+
+for ch in s:
+    if ch in "aeiouAEIOU":
+        vowels += 1
+    elif ch.isalpha():
+        consonants += 1
+    elif ch.isdigit():
+        digits += 1
+    elif ch == " ":
+        spaces += 1
+
+print("Vowels:", vowels)
+print("Consonants:", consonants)
+print("Digits:", digits)
+print("Spaces:", spaces)
+
+
+'''output:
+Enter a string: sathish 123
+Vowels: 2
+Consonants: 5
+Digits: 3
+Spaces: 1
+'''
